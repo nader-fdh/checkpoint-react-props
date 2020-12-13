@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import nader from './nader.jpg';
 import './App.css';
+import Profil from './profil/profil';
+import PropTypes from "prop-types";
+
+const fullName = 'Fadhel Nader' ;
+const bio = 'Junior Devlopper';
+const profession = 'FullStack Js Developper';
+const alertName = alert('Fadhel Nader');
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <div>
+        <Profil fullName={fullName} bio={bio} profession={profession} alertName={alertName} /><img src={nader} alt="nader" /><Profil/>
+      </div>
+
     </div>
   );
 }
